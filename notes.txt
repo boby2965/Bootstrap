@@ -1,0 +1,49 @@
+----------------------    Bootstrap    ---------------------
+
+- Bootstrap is a open source component library for building effective UI.
+- It is faster in building UI.
+- It provides both free and premium template.
+- It is a cross platform 
+- A component comprises of 
+	a) Presentation		HTML
+	b) styles			CSS
+	c) logic			JavaScript,jQuery\
+    
+- Similar to bootstrap
+	twitter bootstrap
+	telerix
+	dev express
+	jQuery UI
+	mui [react]
+	material UI [angular]
+- The latest version of Bootstrap is 5x
+
+Note: 
+	Bootstrap requires "popper.js" only on 2 occasions. hence it is not mandatory to include for all other components.
+
+- Bootstrap provides CSS classes and jQuery attributes to design components.
+- Bootstrap implicitly sets various styles using type selectors.
+
+1. Bootstrap Containers
+2. Bootstrap Box model
+	a) Margin
+	b) Padding
+	c) Border
+	d) Border Radius
+	e) Width and Height
+3. Bootstrap Forms
+4. Bootstrap Input Grops
+5. Bootstrap background and text colors
+
+Bootstrap Positions:
+-------------------
+.position-static
+.position-relative
+.position-absolute
+.position-fixed
+.position-sticky
+.start-{value}		left
+.end-value-{value}	right
+.top-value-{value}	top
+.bottom-{value}		bottom
+	value= 0, 25, 50, 75, 100.
