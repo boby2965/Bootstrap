@@ -11,15 +11,26 @@
     
 - Similar to bootstrap
 	twitter bootstrap
-	telerix
+	telerik
 	dev express
 	jQuery UI
 	mui [react]
 	material UI [angular]
 - The latest version of Bootstrap is 5x
+- To use bootstrap in any web page link the following files
+
+	<head>
+		<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+	</head>
+
+	<body>
+		<script src="../node_modules/jquery/dist/jquery.js"></script>
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+	</body>
 
 Note: 
-	Bootstrap requires "popper.js" only on 2 occasions. hence it is not mandatory to include for all other components.
+	Bootstrap requires "popper.js" only on 2 occasions. hence it is not mandatory to include it for all other components.
 
 - Bootstrap provides CSS classes and jQuery attributes to design components.
 - Bootstrap implicitly sets various styles using type selectors.
@@ -42,8 +53,66 @@ Bootstrap Positions:
 .position-absolute
 .position-fixed
 .position-sticky
-.start-{value}		left
-.end-value-{value}	right
-.top-value-{value}	top
-.bottom-{value}		bottom
-	value= 0, 25, 50, 75, 100.
+.start-{value}		=> left
+.end-{value}		=> right
+.top-{value}		=> top
+.bottom-{value}		=> bottom
+	value = 0, 25, 50, 75, 100.
+
+Bootstrap Display:
+------------------
+.d-flex
+.d-none
+.d-block
+.d-inline
+.flex-wrap
+.flex-row
+.flex-column
+.flex-row-reverse
+.flex-column-reverse
+
+.justify-content-between
+.justify-space-between
+.justify-space-around
+.justify-content-center
+.align-items-center
+.align-items-baseline
+
+Bootstrap Grid Classes:
+-----------------------
+.row
+.col 
+.col-{1 to 12}
+
+Bootstrap Components:
+----------------------
+- A component is rich in design, styles and functionality.
+- Bootstrap provides several pre-defined components like
+		- alerts
+		- buttons
+		- badge
+		- collapse
+		- card
+		- carousel
+		- modal
+		- navbar
+		- nav 
+		- spinners
+		- progress
+		- table
+		- forms 	etc..
+
+	Alerts:
+	-------
+	- It is used to design a embeded design box in page.
+	- You can close or open the alert dynamically
+		classes:
+			.alert
+			.alert-{contextual}  => primary, secondary, success, danger, warning, info, etc..
+			.alert-dismissible
+			.alert-title
+			.alert-subtitle
+			.alert-text
+			.alert-link 
+		jQuery Attribute:
+			data-bs-dismiss  : It is used to close any component.
