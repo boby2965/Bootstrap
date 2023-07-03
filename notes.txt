@@ -114,5 +114,104 @@ Bootstrap Components:
 			.alert-subtitle
 			.alert-text
 			.alert-link 
+
 		jQuery Attribute:
 			data-bs-dismiss  : It is used to close any component.
+		
+	Modal:
+	------
+	- It is a dialog that pops up in browser window.
+	- You can control the dialog dynamically.
+		classes: 
+			.modal 
+			.modal-dialog
+			.modal-content
+			.modal-header
+			.modal-body
+			.modal-footer
+			.modal-fullscreen
+			.modal-dialog-centered
+			.modal-dialog-scrollable
+			.fade
+
+		jQuery Attributes:
+			data-bs-dismiss			: It is used to close component on button click
+			data-bs-target			: It refers to Id of he element which is target of button click 
+			data-bs-toggle			: It refersto component name.
+
+	 syntax:
+	 	<div class="modal" id="demo"> 
+			<div class="modal-dialog">
+				<div class="modal-content">
+					........
+					..create modal header, body, footer..
+					.......
+					</div>
+				</div>
+			</div>
+		</div>
+		<button data-bs-target="#demo" data-bs-toggle="modal"> Open </button>
+			
+			(or)
+
+		<a href="#demo" data-bs-toggle="modal"> Text | Image</a>
+	Note:
+		Nested or Embedded modals are disabled from bootstrap 5 version.
+	
+	Collapse:
+	---------
+	- It is a component used to show or hide any content in a page dynamically.
+		classes:
+			.collapse
+			.show
+			.fade 
+
+		syntax:
+			<div class="collapse show" id="details">
+				..... your content.....
+			</div>
+			<button data-bs-target="#details" data-bs-toggle="collapse">Show/ Hide</button>
+
+	Accordion:
+	----------
+	- It is a combination of collapse content that uses "mutex" mechanism.
+		Classes:
+			.accordion 
+			.accordion-item 
+			.accordion-header 
+			.accordion-body 
+			.accordion-footer 
+			.accordion-collapse
+			.accordion-button 
+
+		jQuery Attributes:
+			data-bs-parent:		It is used to bind all items to one parent, so that they can exhibit mutex.
+
+	syntax:
+		<div class="accordion" id="parent">
+			<div class="accordion-items"> 
+				<div class="accordion-header">
+					<button classs=accordion-button"></button>
+				</div>
+				<div class="accordion-collapse collapse" id="q1" data-bs-parent="#parent">
+					<div class="accordion-body">
+						<p> ... your content....</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	Card:
+	----
+	- It is used to display card-style to organize content in various sections with image and content.
+		classes:
+			.card 
+			.card-header 
+			.card-body 
+			.card-footer 
+			.card-title 
+			.card-subtitle 
+			.card-text 
+			.card-img-top 
+			.card-img-bottom 
+			.card-img-overlay
