@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <h2>HTML Dropdown</h2>
+    <select>
+        <option value="">Language</option>
+        <option value="">Hindi</option>
+        <option value="">English</option>
+        <option value="">Telugu</option>
+    </select>
+    <h2>Bootstrap Dropdown</h2>
+    <div class="dropdown ">
+        <button class="dropdown-toggle btn btn-dark" data-bs-toggle="dropdown">
+            <span class="bi bi-globe m-2"></span>Language
+        </button>
+        <ul class="dropdown-menu ">
+            <li class="dropdown-item"> <a href="#"> <span class="dropdown-item-text">English</span></a></li>
+            <li class="dropdown-item"> <a href="#"> <span class="dropdown-item-text">हिंदी</span></a></li>
+            <li class="dropdown-item "> <a href="#"> <span class="dropdown-item-text">తెలుగు</span></a></li>
+            <li class="dropdown-divider"> </li>
+            <li class="dropdown-item"> <a href="#"> <span class="dropdown-item-text">Help?</span></a></li>
+        </ul>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -215,3 +215,116 @@ Bootstrap Components:
 			.card-img-top 
 			.card-img-bottom 
 			.card-img-overlay
+	
+	Dropdown:
+	---------
+	- HTML dropdown is designed by using <select> and <option>
+	- It is an RC Data type so it will not allow symbols and icons.
+	- Bootstrap dropdown is a container with HTML elements that allow formats, icons and symbols.
+	
+	Note:
+		- HTML dropdown is good for dynamic list that changes the items regularly.
+		- Bootstrap dropdown is good for a static list of items.
+	
+		Classes:
+			.dropdown
+			.dropup 
+			.dropstart
+			.dropend
+			.dropdown-menu
+			.dropdown-items
+			.dropdown-item-text 
+			.dropdown-link 
+			.dropdown-toggle 
+			.dropdown-divider 
+
+		syntax:
+			<div class="dropdown-toggle>
+				<button class="dropdown-toggle>
+					View List 
+				</button>
+				<ul class="dropdown-menu>
+					<li class="dropdown-item> <span class="dropdown-item-text"> Text </span></li>
+				</ul>
+			</div>
+
+		Note:
+			Button uses "data-bs-toggle="dropdown".
+
+	Carousel:
+	---------
+	- It is used to create slide show of content.
+	- It provides options for controlling the slide show manually and automatically.
+	
+	Basic carousel classes:
+		.carousel
+		.carousel-inner
+		.carousel-item 
+	
+	Note:
+		1. Every carousel contains multiple items, you have to set one item as "active".
+				<div class="cariusel-item active"></div>
+			You can't have multiple items as active.
+		
+		2. Carousel will not start animation implicitly, you have to start the animation explicitly by using 
+			jQuery attribute " data-bs-ride="carousel" ".
+			<div class="carousel" id="banners" data-bs-ride="carousel"> </div>
+		
+		3. Carousel have two types of animation effects 
+			a) slide 
+			b) Fade 
+					<div class="carousel slide></div>
+					<div class="carousel carousel-fade"></div>
+
+	Carousel Navigation:
+		a) Using Buttons		[Sequentional Access]
+		b) Using Indicators 	[Random Access]
+			classes for Buttons:
+				.carousel-control-prev 
+				.carousel-control-prev-icon 
+				.carousel-control-next 
+				.carousel-control-next-icon 
+			Button Attribute:
+				data-bs-slide="prev | next"
+	Note:
+		If carousel buttons are light then apply "carousel-dark" theme for carousel.
+	
+			classes for Indicators:
+				.carousel-indicators 
+	
+	Note:
+		Indicators is a collection of items that act as navigation buttons.
+
+			Indicator attribute:
+				data-bs-slide-to="0" 	0 is the index, which refers to first carousel-item.
+	
+	Note: 
+		One carousel indicator must be active.
+			<button data-bs-slide-to="0" class="active" data-bs-target="#carousel_ID"></button>
+
+	Carousel Timings:
+	- Carousol uses the default timings for slide or fade animation.
+	- You can control the timing by using the attribute.
+			"data-bs-interval=1000"  		1000 ms = 1 second
+	-Timing is set to "carousel-item".
+
+		syntax:
+			<div class="carousel-item" data-bs-interval="3000"></div>
+	
+	Note:
+		You can't set timimg for any one specific item, It is recomended to set timings for all items in carousel.
+	
+	Spinners:
+	---------
+	- spinners are used to show the status of any task performed in page.
+	- Downloading, copying, uploading, installing etc etc..
+		classes:
+			.spinner-border 
+			.spinner-border-sm 
+			.spinner-grow
+			.spinner-grow-sm 
+		syntax:
+			<div class="spinner-border text-success"></div>
+			<div class="spinner-grow text-warning"></div>
+
+	
