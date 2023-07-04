@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <h2>Product Details</h2>
+    <ul class="nav nav-tabs">
+        <li class="nav-item"><a href="#basic" class="nav-link" data-bs-toggle="tab"><span class="nav-text">Basic Details</span></a></li>
+        <li class="nav-item"><a href="#preview" class="nav-link" data-bs-toggle="tab"><span class="nav-text">Preview</span></a></li>
+        <li class="nav-item"><a href="#review" class="nav-link" data-bs-toggle="tab"><span class="nav-text">Basic Details</span></a></li>
+        <li class="nav-item"><a href="#rating" class="nav-link" data-bs-toggle="tab"><span class="nav-text">Ratings & Reviews</span></a></li>
+    </ul>
+    <div class="tab-content mt-3">
+        <div class="tab-pane active" id="basic">
+            <dl>
+                <dt>Name</dt>
+                <dd>Realme</dt>
+                <dt>Price</dt>
+                <dd>&#8377;10000/ -</dt>
+            </dl>
+        </div>
+        <div class="tab-pane" id="preview">
+            <img src="../public/images/a1.jpg" width="200" height="250">
+            
+        </div>
+        <div class="tab-pane" id="review">
+            <p>Some thing about realme mobile</p>
+            <ol>
+                <li>Feature-1</li>
+                <li>Feature-2</li>
+                <li>Feature-3</li>
+            </ol>
+        </div>
+        <div class="tab-pane" id="rating">
+            <dl>
+                <dt>Rating</dt>
+                <dd><span class="bi bi-star-fill"></span>4.2</dd>
+                <dt>Reviews</dt>
+                <dt>60,300</dt>
+            </dl>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

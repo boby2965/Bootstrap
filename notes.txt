@@ -327,4 +327,139 @@ Bootstrap Components:
 			<div class="spinner-border text-success"></div>
 			<div class="spinner-grow text-warning"></div>
 
+	Progress:
+	---------
+	- It is uses to show the status of any task performed in the page.
+		classes:
+			.progress 
+			.progress-bar 
+			.progress-bar-striped 
+			.progress-bar-animated 
 	
+	Note:
+		Progress bar status is defined by using width.
+
+	Badge:
+	-----
+	- It is used to display any inline content highlighted with background and font style.
+		classes:
+			.badge 
+			.bg-{contextual}
+			.text-{contextual}
+		
+		syntax:
+			<span class="badge bg-danger rounded rounded-circle">2</span>
+
+	Pagination:
+	-----------
+	- It is used to create pagination with page numbers. They are used for navigation within any data-grid.
+		classes: 
+			.pagenation
+			.page-item 
+			.page-link 
+			.page-text 
+			.pagenation-sm | lg 
+
+		syntax:
+			<ul class=pagination>
+				<li class="page-item"><a class="page-link"><span class="page-text">   </span> </a> </li>
+			</ul>
+		
+	Note:
+		You can add "active" or "disabled" classes for page-item.
+			<li class="page-item active"></li>
+			<li class="page-item disabled"></li>
+	
+	Buttons:
+	--------
+	classes:
+		.btn
+		.btn-{contextual}
+		.btn-outline-{contextual}
+		.btn-group
+		.btn-group-vertical
+		.btn-link
+		.btn-close 
+		.btn-toolbar 
+		.btn-sm 
+		.btn-lg 
+	
+	Form:
+	-----
+	classes:
+		.form-control   		: textbox, password, number, date, url, email, textarea
+		.form-select 			: Dropdown and listbox 
+		.form-range				: range input 
+		.form-label 			: labels
+		.form-check-input		: radio and checkbox 
+		.form-check-label 		: labels for radio and checkbox 
+		.form-switch 			: radio and checkbox container 
+		.form-control-color 	: color input 
+		.form-control-files	 	: file input 
+
+	input groups:
+		.input-group
+		.input-group-text 
+		.input-group-sm | lg 
+	
+	Navbar & Tabs:
+	--------------
+	- It is a navigation designed with "tab" based access.
+	- You can configure content in multiple tabs, but it will display online one tab with mutex mechannism.
+	 classes:
+	 	.nav 
+		.nav-tabs 
+		.nav-pill 
+		.nav-item 
+		.nav-link 
+		.nav-text 
+		.tabs   up to version-4 => .tab-content version-5
+		.tab-pane 
+		.nav-menu [obsolete]
+
+	syntax:
+		<ul class="nav nav-tabs">
+			<li class="nav-item"><a class="nav-link"> <span class="nav-text">Home</span>/a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane" id="panel-1">
+				... Item Details.....
+			</div>
+		</div>
+		
+	Navbar[Responsive]:
+	-------
+	- It configures a responsive navigation for webpage.
+	- The navbar changes dynamically according to media query.
+	classes:
+		.navbar 
+		.navbar-brand 
+		.navbar-toggler
+		.navbar-toggler-icon 
+		.navbar-expand-{lg | sm | md} 
+		.navbar-nav 
+		.navbar-collapse 
+		.nav-item 
+		.nav-text 
+		.nav-link 
+		.navbar-light 
+		.navbar-dark 
+	syntax:
+		<div class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <h2 class="navbar-brand">Shopper.</h2>
+            <ul class="navbar-nav navbar-collapse collapse p-2" id="menu"> 
+                <li class="nav-item"><a  class="nav-link"><span class="nav-text">Home</span></a></li>
+                <li class="nav-item"><a  class="nav-link"><span class="nav-text">About</span></a></li>
+                <li class="nav-item"><a  class="nav-link"><span class="nav-text">Contact</span></a></li>
+                <li class="nav-item"><a  class="nav-link"><span class="nav-text">Blog</span></a></li>
+                <li class="nav-item input-group">
+                    <input type="text" class="from-control w-75">
+                    <button class="btn btn-warning"><span class="bi bi-search"></span></button>
+                </li>
+            </ul>
+        </div>
+		</div>
